@@ -1,5 +1,5 @@
 // dogs I have loved before
-let dogs = [{name:"dillon", color: "dog treat color"}, {name: "Ziggy", color:"chartrese"}, {name; "mercedes", color:"poop"}, {name: "nala", color:"stardust"}, {name; "kloot", color:"coffee grind brown"}, {name; "petunia", color:"rose gold"}];
+let dogs = [{name:"Lakota", color: "pink"}, {name: "Kiowa", color:"blue"}, {name; "Druid", color:"red"}, {name: "Skye", color:"frisbee"}, {name; "Shasta", color:"dog treat"}, {name; "Sona", color:"fruit"}];
 
 let randomIndex;
 
