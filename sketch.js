@@ -19,15 +19,29 @@ let dogs = [{
   color: "fruit"
 }];
 
-let randomIndex;
+let randomIndex; 
 let counter = 0
 let animating = false;
+let drawings = [];
+let imageCounter = 0
+
+function preload(){
+  for (let i = 0; i<=65; i++){
+    drawings[i] = loadImages("assets/drawings_ " + i + ".PNG")
+  }
+}
 
 function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
+  imagemode(CENTER);
+  frameRate(12);
+
   text("Click to Randomize!", 50, 50);
+  
+
+ 
 
 
 
@@ -37,8 +51,15 @@ function setup() {
 
 function draw() {
 
+
   if (animating == true) {
-    ellipse(random(width), random(height), random(50, 200));
+    clear();
+    image(drawings[imageCounter], width/2, height/2); 
+    if (imageCounter < drawings.length - 1){
+    imageCounter++;
+    }else {
+      imageCounter = 0;
+    }
   }
 
 }
