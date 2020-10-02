@@ -24,6 +24,7 @@ let counter = 0
 let animating = false;
 let drawings = [];
 let imageCounter = 0
+let button;
 
 function preload(){
   for (let i = 0; i<=65; i++){
@@ -35,14 +36,18 @@ function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
+  textFont('Courier new');
+  textAlign(CENTER);
+  textStyle(BOLD);
+  fill(255);
   imagemode(CENTER);
   frameRate(8);
 
   text("Click to Randomize!", 50, 50);
   
 
- 
-
+ button = createButton("click to Randomize!");
+ button.mousePressed(buttonPressed);
 
 
 
@@ -69,10 +74,11 @@ function draw() {
 function randomizer() {
   animating = false;
   if (dogs[0]) {
-    background(random(200, 255));
+    clear();
+    image(random(drawings), width/2, height/2); 
     randomIndex = int(random(dogs.length));
     text(`${dogs[randomIndex].name} 's favorite color is
-${dogs[randomIndex].color}`, 50, 50);
+${dogs[randomIndex].color}`, width/2, height - 25);
     
     //text(dogs[randomIndex].name + "'s favorite color is" + dogs[randomIndex].color, 50, 50);
     dogs.splice(randomIndex, 1);
@@ -83,7 +89,7 @@ ${dogs[randomIndex].color}`, 50, 50);
   }
 }
 
-function mousePressed() {
+function buttonPressed() {
   animating = true;
   setTimeout(randomizer, 2000);
 
