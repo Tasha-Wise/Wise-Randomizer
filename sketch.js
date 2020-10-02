@@ -36,7 +36,7 @@ function setup() {
   background(200);
   textSize(32);
   imagemode(CENTER);
-  frameRate(12);
+  frameRate(8);
 
   text("Click to Randomize!", 50, 50);
   
