@@ -28,7 +28,7 @@ let button;
 
 function preload(){
   for (let i = 0; i<=65; i++){
-    drawings[i] = loadImages("assets/drawings_ " + i + ".PNG")
+    drawings[i] = loadImage("assets/drawings_ " + i + ".PNG")
   }
 }
 
@@ -40,7 +40,7 @@ function setup() {
   textAlign(CENTER);
   textStyle(BOLD);
   fill(255);
-  imagemode(CENTER);
+  imageMode(CENTER);
   frameRate(8);
 
   text("Click to Randomize!", 50, 50);
