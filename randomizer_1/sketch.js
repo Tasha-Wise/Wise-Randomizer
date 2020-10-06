@@ -20,7 +20,7 @@ let dogs = [{
 }];
 
 let randomIndex; 
-let counter = 0
+let counter = 0;
 let animating = false;
 let drawings = [];
 let imageCounter = 0;
