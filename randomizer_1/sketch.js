@@ -23,7 +23,7 @@ let randomIndex;
 let counter = 0
 let animating = false;
 let drawings = [];
-let imageCounter = 0
+let imageCounter = 0;
 let button;
 
 function preload(){
