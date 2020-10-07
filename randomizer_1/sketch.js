@@ -33,7 +33,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(900, 900);
   background(200);
   textSize(24);
   textFont('Courier new');
@@ -43,7 +43,7 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-  text("Click to Randomize!", 500, 500);
+  text("Click to Randomize!", 450, 450;
   
 
  button = createButton("click to Randomize!");
@@ -78,7 +78,7 @@ function randomizer() {
     image(random(drawings), width/2, height/2); 
     randomIndex = int(random(dogs.length));
     text(`${dogs[randomIndex].name} 's favorite color is
-${dogs[randomIndex].color}`, width/2, height - 25);
+${dogs[randomIndex].color}`, width/2, height - 15);
     
     //text(dogs[randomIndex].name + "'s favorite color is" + dogs[randomIndex].color, 50, 50);
     dogs.splice(randomIndex, 1);
