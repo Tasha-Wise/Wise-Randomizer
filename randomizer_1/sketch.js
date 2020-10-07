@@ -43,8 +43,8 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-text(CENTER)
-  text("Click to Randomize!", 50, 50);
+
+  text("Click to Randomize!", 450, 450);
   
 
  button = createButton("click to Randomize!");
@@ -78,14 +78,14 @@ function randomizer() {
     clear();
     image(random(drawings), width/2, height/2); 
     randomIndex = int(random(dogs.length));
-    text(`${dogs[randomIndex].name} 's favorite color is${dogs[randomIndex].color}`, width/2, height - 15);
+    text(`${dogs[randomIndex].name} 's favorite color is${dogs[randomIndex].color}`, width/2, height - 5);
     
     //text(dogs[randomIndex].name + "'s favorite color is" + dogs[randomIndex].color, 50, 50);
     dogs.splice(randomIndex, 1);
 
   } else {
     background(random(200, 255));
-    text(CENTER)
+    
     text("nothing left!", 450, 450);
   }
 }
