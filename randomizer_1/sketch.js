@@ -1,22 +1,22 @@
-// dogs I have loved before
-let dogs = [{
-  name: "Lakota",
-  color: "pink"
+// characters I have designed
+let characters = [{
+  name: "Marissa",
+  color: "BlUe*%$?/pUrPlE?!@5%"
 }, {
-  name: "Kiowa",
-  color: "blue"
+  name: "Scarlett",
+  color: "Pink"
 }, {
-  name: "Druid",
-  color: "red"
+  name: "Valentine",
+  color: "RAINBOW!GRAY?"
 }, {
-  name: "Skye",
-  color: "frisbee"
+  name: "Madison",
+  color: "Green"
 }, {
-  name: "Shasta",
-  color: "dog treat"
+  name: "Stella",
+  color: "Cyan"
 }, {
-  name: "Sona",
-  color: "fruit"
+  name: "Violet",
+  color: "Magenta"
 }];
 
 let randomIndex; 
@@ -74,14 +74,14 @@ function draw() {
 
 function randomizer() {
   animating = false;
-  if (dogs[0]) {
+  if (characters[0]) {
     clear();
     image(random(drawings), width/2, height/2); 
-    randomIndex = int(random(dogs.length));
-    text(`${dogs[randomIndex].name} 's favorite color is ${dogs[randomIndex].color}`, width/2, height - 5);
+    randomIndex = int(random(characters.length));
+    text(`${characters[randomIndex].name} 's favorite color is ${characters[randomIndex].color}`, width/2, height - 5);
     
     //text(dogs[randomIndex].name + "'s favorite color is" + dogs[randomIndex].color, 50, 50);
-    dogs.splice(randomIndex, 1);
+    characters.splice(randomIndex, 1);
 
   } else {
     background(random(200, 255));
