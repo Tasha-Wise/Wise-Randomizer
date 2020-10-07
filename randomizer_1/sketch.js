@@ -78,7 +78,7 @@ function randomizer() {
     clear();
     image(random(drawings), width/2, height/2); 
     randomIndex = int(random(dogs.length));
-    text(`${dogs[randomIndex].name} 's favorite color is ${dogs[randomIndex].color}`, width/2, height - 5);
+    text(`${dogs[randomIndex].name} 's favorite color is ${dogs[randomIndex].color}`, width/2, height - 1);
     
     //text(dogs[randomIndex].name + "'s favorite color is" + dogs[randomIndex].color, 50, 50);
     dogs.splice(randomIndex, 1);
