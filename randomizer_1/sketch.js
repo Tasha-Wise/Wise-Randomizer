@@ -33,7 +33,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(800, 800);
   background(200);
   textSize(32);
   textFont('Courier new');
