@@ -43,7 +43,7 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
-  text("Click to Randomize!", 450, 450);
+  text("Click to Randomize!", 50, 50);
   
 
  button = createButton("click to Randomize!");
