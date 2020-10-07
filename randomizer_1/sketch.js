@@ -35,7 +35,7 @@ function preload(){
 function setup() {
   createCanvas(1000, 1000);
   background(200);
-  textSize(32);
+  textSize(24);
   textFont('Courier new');
   textAlign(CENTER);
   textStyle(BOLD);
