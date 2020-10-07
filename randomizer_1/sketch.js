@@ -85,7 +85,7 @@ ${dogs[randomIndex].color}`, width/2, height - 15);
 
   } else {
     background(random(200, 255));
-    text("nothing left!", 50, 50);
+    text("nothing left!", 450, 450);
   }
 }
 
