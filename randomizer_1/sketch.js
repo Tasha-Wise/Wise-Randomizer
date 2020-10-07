@@ -43,6 +43,7 @@ function setup() {
   imageMode(CENTER);
   frameRate(8);
 
+text(CENTER)
   text("Click to Randomize!", 50, 50);
   
 
@@ -84,6 +85,7 @@ function randomizer() {
 
   } else {
     background(random(200, 255));
+    text(CENTER)
     text("nothing left!", 450, 450);
   }
 }
