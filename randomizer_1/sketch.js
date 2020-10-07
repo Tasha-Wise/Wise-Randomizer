@@ -28,7 +28,7 @@ let button;
 
 function preload(){
   for (let i = 0; i<=62; i++){
-    drawings[i] = loadImage("assets/drawings_" + i + "PNG")
+    drawings[i] = loadImage("assets/drawings_" + i + ".PNG")
   }
 }
 
