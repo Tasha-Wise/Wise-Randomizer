@@ -39,11 +39,11 @@ function setup() {
   textFont('Courier new');
   textAlign(CENTER);
   textStyle(BOLD);
-  fill(255);
+  fill(0);
   imageMode(CENTER);
   frameRate(8);
 
-  text("Click to Randomize!", 50, 50);
+  text("Click to Randomize!", 500, 500);
   
 
  button = createButton("click to Randomize!");
